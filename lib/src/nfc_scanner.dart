@@ -28,7 +28,8 @@ extension FunctionalityWrappers on NfcScanner {
   /// Handles [TException] by executing the [handler].
   ///
   /// This is the intended behavior when using the [NfcDetectorUid].
-  NfcScanner handle<TException>(void Function(Object error, StackTrace? stackTrace) handler) {
+  NfcScanner handle<TException>(
+      void Function(Object error, StackTrace? stackTrace) handler) {
     return _HandledExceptionNfcScanner<TException>(
       handlerDelegate: handler,
       innerScanner: this,
