@@ -1,39 +1,35 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+Part of the [ad\_hoc\_ident](https://pub.dev/packages/ad_hoc_ident) framework.
+Provides functionality to extract identifiers from NFC tags and MRZ documents.
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
+> Some features are currently only supported on Android.
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
-
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+> Using NFC and the camera at the same time can lead to crashes.
+> Disable the camera before presenting a NFC tag.
 
 ## Features
-
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+The package consists of three domain packages. Each is provided with some implementation packages.
+* Provide domain classes for working with NFC tags.
+* Detect the UID of a connected NFC tag and verify it is static.
 
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+Add the main domain package to your app's pubspec.yaml file and
+add the packages of the features you require for your app.
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
-
-```dart
-const like = 'sample';
-```
+Make yourself familiar with the example app in the 
+[ad\_hoc\_ident](https://pub.dev/packages/ad_hoc_ident) package,
+as it provides a good overview on how to combine the different packages.
+Otherwise pick and match the features that suite you.
+All features implemented out of the box have their interfaces defined in the respective
+domain package, so you can easily create and integrate your own implementations.
 
 ## Additional information
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+If you use this package and implement your own features or extend the existing ones,
+consider creating a pull request. This project was created for university, but if it is useful
+to other developers I might consider supporting further development.
+
+Please be aware that reading MRZ documents or NFC tags of other persons might be restricted by
+local privacy laws.
