@@ -1,0 +1,16 @@
+name: ad_hoc_ident_nfc
+description: "Provides functionalities to extract identifiers NFC tags as part of the ad_hoc_identity framework."
+version: 0.0.1-preview-1
+homepage: https://github.com/FabianMoeckel/ad_hoc_ident_nfc
+repository: https://github.com/FabianMoeckel/ad_hoc_ident_nfc
+
+
+environment:
+  sdk: '>=3.4.1 <4.0.0'
+
+dependencies:
+  ad_hoc_ident: ^0.0.1-preview-1
+
+dev_dependencies:
+  lints: ^4.0.0
+  test: ^1.25.8
