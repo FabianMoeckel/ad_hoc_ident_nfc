@@ -1,5 +1,5 @@
 name: ad_hoc_ident_nfc
-description: "Provides functionalities to extract identifiers NFC tags as part of the ad_hoc_identity framework."
+description: "Provides functionalities to extract identifiers from NFC tags as part of the ad_hoc_identity framework."
 version: 0.0.1-preview-1
 homepage: https://github.com/FabianMoeckel/ad_hoc_ident_nfc
 repository: https://github.com/FabianMoeckel/ad_hoc_ident_nfc
